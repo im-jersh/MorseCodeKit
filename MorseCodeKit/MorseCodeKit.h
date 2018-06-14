@@ -1,11 +1,3 @@
-//
-//  MorseCodeKit.h
-//  MorseCodeKit
-//
-//  Created by Joshua O'Steen on 2/22/18.
-//  Copyright © 2018 Random Order. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for MorseCodeKit.

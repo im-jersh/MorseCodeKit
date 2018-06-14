@@ -1,11 +1,11 @@
 import Foundation
 
-enum MorseCodeCharacterComponent: Int {
+public enum MorseCodeCharacterComponent: Int {
     case dot, dash
 }
 
 // String -> Morse
-enum MorseCodeCharacter: String {
+public enum MorseCodeCharacter: String {
     // Letters 
     case A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
     
@@ -14,7 +14,9 @@ enum MorseCodeCharacter: String {
     
     // Punctuation
     case period = ".", comma = ",", colon = ":", query = "?", apostrophe = "'", hyphen = "-", slash = "/", openingRoundBracket = "(", closingRoundBracket = ")", quotation = "\"", atSign = "@", equalSign = "="
-    
+}
+
+public extension MorseCodeCharacter {
     var components: [MorseCodeCharacterComponent] {
         switch self {
         case .A:
@@ -114,10 +116,9 @@ enum MorseCodeCharacter: String {
         }
         
     }
-    
 }
 
-extension Character {
+public extension Character {
     
     var morseCodeCharacter: MorseCodeCharacter? {
         switch String(self).uppercased() {
