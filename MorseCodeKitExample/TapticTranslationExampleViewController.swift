@@ -29,11 +29,12 @@ extension TapticTranslationExampleViewController {
         queue.maxConcurrentOperationCount = 1
         
         let dot = DotOperation()
+        let dot2 = DotOperation()
         let pause = PauseOperation()
         
-        pause.addDependency(dot)
+        dot2.addDependency(dot)
         
-        queue.addOperations([dot, pause], waitUntilFinished: true)
+        queue.addOperations([dot, dot2], waitUntilFinished: true)
         
     }
     
