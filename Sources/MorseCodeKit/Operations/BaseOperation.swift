@@ -1,3 +1,5 @@
+import Foundation
+
 struct KVOKeys {
     static let isExecuting = "isExecuting"
     static let isFinished = "isFinished"

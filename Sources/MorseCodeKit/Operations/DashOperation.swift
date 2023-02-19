@@ -1,3 +1,5 @@
+import UIKit
+
 public final class DashOperation: BaseOperation {
     
     let impactGenerator: UIImpactFeedbackGenerator

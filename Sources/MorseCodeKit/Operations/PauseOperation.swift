@@ -1,3 +1,5 @@
+import UIKit
+
 public final class PauseOperation: BaseOperation {
     
     let impactGenerator: UIImpactFeedbackGenerator

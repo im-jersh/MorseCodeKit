@@ -4,15 +4,12 @@ public enum MorseCodeCharacterComponent: Int {
     case dot, dash
 }
 
-// String -> Morse
-public enum MorseCodeCharacter: String {
-    // Letters 
+public enum MorseCodeCharacter: String, CaseIterable {
+
     case A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
     
-    // Numbers
     case zero = "0", one = "1", two = "2", three = "3", four = "4", five = "5", six = "6", seven = "7", eight = "8", nine = "9"
     
-    // Punctuation
     case period = ".", comma = ",", colon = ":", query = "?", apostrophe = "'", hyphen = "-", slash = "/", openingRoundBracket = "(", closingRoundBracket = ")", quotation = "\"", atSign = "@", equalSign = "="
 }
 
